@@ -68,36 +68,51 @@ function register() {
               </a>
             </div>
 
-            <div className="relative flex items-center mt-8">
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text">First Name</span>
+              </div>
               <input
                 type="text"
-                className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                placeholder="First name"
+                placeholder="First Name"
+                className="input input-bordered w-full max-w-xs"
                 name="firstname"
                 value={registerData.firstname}
                 onChange={handleChange}
               />
-            </div>
-
-            <div className="relative flex items-center mt-8">
+            </label>
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text">Middle Name</span>
+              </div>
               <input
                 type="text"
-                className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                placeholder="Middle name"
+                placeholder="Middle Name"
+                className="input input-bordered w-full max-w-xs"
                 name="middlename"
                 value={registerData.middlename}
                 onChange={handleChange}
               />
-            </div>
+            </label>
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text">Last Name</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="input input-bordered w-full max-w-xs"
+                name="lastname"
+                value={registerData.lastname}
+                onChange={handleChange}
+              />
+            </label>
 
             <div className="relative flex items-center mt-8">
               <input
                 type="text"
                 className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Last name"
-                name="lastname"
-                value={registerData.lastname}
-                onChange={handleChange}
               />
             </div>
 
